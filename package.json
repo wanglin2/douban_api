@@ -1,0 +1,32 @@
+{
+  "name": "douban_api_server",
+  "version": "1.0.0",
+  "description": "提供豆瓣各种数据API",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development node app.js",
+    "build": "NODE_ENV=production node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wanglin2/douban_api.git"
+  },
+  "keywords": [
+    "豆瓣",
+    "API"
+  ],
+  "author": "王林",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.1",
+    "cheerio": "^1.0.0-rc.3",
+    "cli-color": "^1.4.0",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "node-schedule": "^1.3.2",
+    "open": "^6.1.0",
+    "phantom": "^6.2.0",
+    "superagent": "^5.0.2"
+  }
+}
