@@ -152,6 +152,7 @@ const Detail = {
         let rating = trims($content.find('.rating_wrap .rating_num').text());
         //内容简介
         let content_intro = $('.related_info #link-report .all').length > 0 ? $('.related_info #link-report .all').eq(0).text() : $('.related_info #link-report .short').length > 0 ? $('.related_info #link-report .short').eq(0).text() : $('.related_info #link-report').length > 0 ? $('.related_info #link-report').eq(0).text() : '';
+        content_intro = trims(content_intro);
         //曲目
         let $song = $content.find('.track-list .indent div');
         let songs = [];
